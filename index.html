@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Obaidul Hoque</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="stylea.css">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<!-- Font Awesome Icons -->
+</head>
+<body>
+<header>
+    <h1>Obaidul's</h1>
+    <nav>
+      <a style="color: rebeccapurple" href="#contact">Contact</a>
+    </nav>
+</header>
+
+<button class="chat-toggle-btn" id="chat-toggle-btn">🤖</button>
+<div class="chat-container hidden" id="chat-container">
+    <div class="chat-header">
+        <h2>Obaidul's AI</h2>
+        <div class="chat-controls">
+            <button id="minimize-btn">−</button>
+            <button id="close-btn">×</button>
+        </div>
+    </div>
+    <div class="chat-body" id="chat-body"></div>
+    <div class="chat-footer">
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button id="send-btn">Send</button>
+    </div>
+</div>
+<!-- Home Section -->
+<section id="home" class="home-section">
+    <video autoplay muted loop id="background-video" playsinline>
+      <source src="bgvideo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="home-content" data-aos="fade-up">
+      <h2 style="color: wheat">السلام عليكم<br>I'm Obaidul</h2>
+      <p style="color: lightgrey">Web Developer | Designer | Creator</p>
+    </div>
+  </section>
+    <section class="skills-section" id="skills">
+        <header>
+            <h1 style="font-size: medium;"><i class="fas fa-brain" ></i><br> My Web Development and Programming Skills</h1>
+        </header> <hr color="green">
+        <p>Master a variety of powerful tools and technologies to enhance your web development expertise. From front-end to back-end frameworks, discover the skills to build dynamic and user-friendly websites and applications.</p> <hr color="green">
+        <div class="skills-container">
+            <!-- Skill 1 -->
+            <div class="skill" data-aos="fade-up" id="html">
+                <h3><a href="html.html" target="_blank" title="Learn more about HTML"><i class="fab fa-html5" style="color: #e34c26;"></i> HTML</a></h3>
+                <p>HTML (HyperText Markup Language) is the foundational language for creating web pages. It structures content and ensures accessibility for users and search engines alike.</p>
+                <div class="progress">
+                    <div class="bar progress-bar-html"></div>
+                </div>
+            </div>
+            <!-- Skill 2 -->
+            <div class="skill" data-aos="fade-down" id="css">
+                <h3><a href="css.html" target="_blank" title="Learn more about CSS"><i class="fab fa-css3-alt" style="color: #1572b6;"></i> CSS</a></h3>
+                <p>CSS (Cascading Style Sheets) brings style to the web, allowing developers to design visually engaging and responsive layouts that adapt to different devices.</p>
+                <div class="progress">
+                    <div class="bar progress-bar-css"></div>
+                </div>
+            </div>
+            <!-- Skill 3 -->
+            <div class="skill" data-aos="fade-left" id="js">
+                <h3><a href="javascript.html" target="_blank" title="Learn more about JavaScript"><i class="fab fa-js" style="color: #f7df1e;"></i> JavaScript</a></h3>
+                <p>JavaScript is a dynamic programming language essential for creating interactive and functional web applications, including animations, forms, and real-time updates.</p>
+                <div class="progress">
+                    <div class="bar progress-bar-js"></div>
+                </div>
+            </div>
+            <!-- Add more skills here... -->
+            <div class="skill" data-aos="fade-left" id="react">
+                <h3><a href="react.html" target="_blank" title="Learn more about JavaScript"><i class="fab fa-react" style="color: #61dafb;"></i>React</a></h3>
+                <p>React is a powerful JavaScript library for building user interfaces, focusing on component-based architecture and seamless state management.</p>
+                <div class="progress">
+                    <div class="bar progress-bar-react"></div>
+                </div>
+            </div>
+        
+            <div class="skill" data-aos="fade-up" id="bootstrap">
+                <h3><a href="bootstrap.html" target="_blank" title="Learn more about Bootstrap"><i class="fab fa-bootstrap" style="color: #7952b3;"></i> Bootstrap</a></h3>
+                <p>Bootstrap is a popular front-end framework that simplifies web design with pre-designed components and responsive grid systems.</p>
+                <div class="progress">
+                    <div class="bar progress-bar-bootstrap"></div>
+                </div>
+            </div>
+
+            <div class="skill" data-aos="fade-down" id="angular">
+                <h3><a href="angular.html" target="_blank" title="Learn more about Angular"><i class="fab fa-angular" style="color: #dd0031;"></i> Angular</a></h3>
+                
+                <p>Angular is a robust framework for building scalable web applications, offering two-way data binding and a complete toolset for developers.</p>
+                <div class="progress">
+                    <div class="bar progress-bar-angular"></div>
+                    </div>
+            </div>
+
+            <div class="skill" data-aos="fade-left" id="vue">
+                <h3><a href="vue.html" target="_blank" title="Learn more about Vue"><i class="fab fa-vuejs" style="color: #42b883;"></i> Vue</a></h3>
+                
+                <p>Vue.js is a progressive JavaScript framework that simplifies building user interfaces and single-page applications with its flexible and declarative syntax.</p>
+                <div class="progress">
+                    <div class="bar progress-bar-vue"></div>
+                </div>
+            </div>
+            <div class="skill" data-aos="fade-right" id="wordpress">
+                <h3><a href="wordpress.html" target="_blank" title="Learn more about WordPress"><i class="fab fa-wordpress" style="color: #21759b;"></i> WordPress</a></h3>
+                
+                <p>WordPress is a versatile content management system that powers millions of websites, offering customizable themes and plugins for dynamic content management.</p>
+                <div class="progress">
+                    <div class="bar progress-bar-wordpress"></div>
+                    </div>
+            </div>
+            <div class="skill" data-aos="fade-up" id="woocommerce">
+                <h3><a href="woocommerce.html" target="_blank" title="Learn more about WooCommerce"><i class="fas fa-shopping-cart" style="color: #96588a;"></i> WooCommerce</a></h3>
+                
+                <p>WooCommerce is a WordPress plugin designed for eCommerce, enabling businesses to create and manage online stores with ease.</p>
+                <div class="progress">
+                    <div class="bar progress-bar-woocommerce">
+                </div>
+                </div>
+            </div>
+
+            <div class="skill" data-aos="fade-down" id="python">
+                <h3><a href="python.html" target="_blank" title="Learn more about Python"><i class="fab fa-python" style="color: #306998;"></i> Python</a></h3>
+                
+                <p>Python is a versatile programming language known for its simplicity and power, widely used in web development, data analysis, AI, and more.</p>
+                <div class="progress">
+                    <div class="bar progress-bar-python"></div>
+                </div>
+            </div>
+
+            <div class="skill" data-aos="fade-left" id="php">
+                <h3><a href="php.html" target="_blank" title="Learn more about PHP"><i class="fab fa-php" style="color: #777bb4;"></i> PHP</a></h3>
+                
+                <p>PHP is a server-side scripting language that powers dynamic web content and is a staple for building robust backend systems.</p>
+                <div class="progress">
+                    <div class="bar progress-bar-php"></div>
+                </div>
+            </div>
+
+            <div class="skill" data-aos="fade-right" id="db">
+                <h3><a href="database.html" target="_blank" title="Learn more about Databases"><i class="fas fa-database" style="color: #4caf50;"></i> Database</a></h3>
+                
+                <p>Databases store, organize, and retrieve data efficiently, forming the backbone of modern web applications and systems.</p>
+                <div class="progress">
+                    <div class="bar progress-bar-db"></div>
+                </div>
+            </div>
+
+            <div class="skill" data-aos="fade-up" id="others">
+                <h3><a href="others.html" target="_blank" title="Learn more about other tools"><i class="fas fa-tools" style="color: darkorange;"></i>Others</a></h3>
+                
+                <p>Explore additional tools and technologies that enhance your web development capabilities, from DevOps practices to emerging frameworks and libraries.</p>
+                <div class="progress">
+                    <div class="bar progress-bar-others"></div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- Services Section -->
+    <section id="services">
+        <header><h1><i class="fas fa-tools" style="color: yellow;"></i>Services</h1></header>
+        <div class="service-list-cards">
+            <div class="service" data-aos="fade-right">
+                <i class="fas fa-code" style="color: orange;"></i>
+                <h3>Web Development</h3>
+                <p>Creating responsive and dynamic websites.</p>
+            </div>
+            <div class="service" data-aos="fade-right">
+                <i class="fas fa-pencil-alt"></i>
+                <h3>UI/UX Design</h3>
+                <p>Designing user-friendly interfaces.</p>
+            </div>
+            <div class="service" data-aos="fade-right">
+                <i class="fas fa-chart-line" style="color: #f7df1e"></i>
+                <h3>SEO Optimization</h3>
+                <p>Improving website visibility.</p>
+            </div>
+            <div class="service" data-aos="fade-right">
+                <i class="fas fa-database" style="color: cyan;"></i>
+                <h3>Database Management</h3>
+                <p>Website data handling.</p>
+            </div>
+            <div class="service" data-aos="fade-right">
+                <i class="fas fa-lock" style="color: greenyellow;"></i>
+                <h3>Backend Support</h3>
+                <p>Improving website security.</p>
+            </div>
+            <div class="service" data-aos="fade-right">
+                <i class="fas fa-tools" style="color: rebeccapurple;"></i>
+                <h3>Website Improvement</h3>
+                <p>Old website redesign and security improvements.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+  <section id="contact">
+    <h2 data-aos="fade-up" style="color: mistyrose">Contact Me</h2>
+    <form action="https://formspree.io/f/xjkvdqnq" method="POST" data-aos="fade-left">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="5" placeholder="Enter your message" required></textarea>
+      
+      <!-- Optional hidden field to redirect after form submission -->
+      <input type="hidden" name="_redirect" value="https://obaidulctg.github.io/redirect">
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>About Us</h3>
+        <p>Welcome to Obaidul's Portfolio, where we share insights, ideas, and inspiration to build a responsive website for you. Stay connected!</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">My Skills</a></li>
+          <li><a href="#services">My Services</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h3>Subscribe</h3>
+        <form>
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Mohammed Obaidul Hoque. All Rights Reserved.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/obaidulhoquectg"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.x.com/obaidulhoquectg"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/obaidulhoquectg"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/obaidulhoquectg"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.github.com/in/obaidulctg"><i class="fab fa-github"></i></a>
+    </div>
+    </div>
+    </footer>
+<!-- Add AOS Library -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+<script src="scripta.js"></script>
+</body>
+</html>
