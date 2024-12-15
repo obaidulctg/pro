@@ -1,3 +1,34 @@
+/* General Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px; /* Adjust for mobile-friendly size */
+  height: 0px; /* For horizontal scrollbars */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg,black,lightblue); /* Use a color matching your theme */
+  border-radius: 6px; /* Rounded for aesthetics */
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(-45deg,yellowgreen, orange); /* Lighter background to differentiate */
+}
+
+/* Hide scrollbar when not scrolling (Optional) */
+html {
+  scrollbar-color: yellow ,green; /* Theme color for browsers supporting scrollbar-color */
+  scrollbar-width: thin; /* Makes it thinner on Firefox */
+}
+
+body {
+  overflow-y: scroll; /* Ensure scrollbars are always considered for layout */
+}
+
+/* Fade effect (Optional) */
+@media (hover: none) {
+  ::-webkit-scrollbar {
+    display: none; /* Hide scrollbar until scrolling begins */
+  }
+}
 /* General Reset */
 * {
   margin: 0;
