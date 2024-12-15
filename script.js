@@ -1,3 +1,6 @@
+document.addEventListener("scroll", () => {
+  document.body.style.overflowY = "auto"; // Ensure the scrollbar is visible when scrolling
+});
 
 // Contact Form Submission
 AOS.init({
